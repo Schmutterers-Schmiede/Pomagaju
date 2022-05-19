@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0"
+            prefWidth="600.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="com.schmutterer.pomagaju.controllers.RegistrationViewController">
+    <center>
+        <VBox maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="300.0" prefWidth="300.0" spacing="10.0"
+              style="-fx-background-color: #FFF633;" BorderPane.alignment="CENTER">
+            <children>
+                <Label alignment="CENTER" prefHeight="18.0" prefWidth="294.0" text="Benutzerregistrierung"/>
+                <VBox prefHeight="200.0" prefWidth="100.0">
+                    <children>
+                        <Label text="Name"/>
+                        <TextField promptText="Name"/>
+                    </children>
+                </VBox>
+                <VBox prefHeight="200.0" prefWidth="100.0">
+                    <children>
+                        <Label text="email"/>
+                        <TextField promptText="email Adresse"/>
+                    </children>
+                </VBox>
+                <VBox prefHeight="200.0" prefWidth="100.0">
+                    <children>
+                        <Label text="Passwort"/>
+                        <PasswordField promptText="Passwort"/>
+                    </children>
+                </VBox>
+                <VBox prefHeight="300.0" prefWidth="100.0">
+                    <children>
+                        <Label text="Passwort Wiederholung"/>
+                        <PasswordField promptText="Passwort"/>
+                    </children>
+                </VBox>
+                <BorderPane prefHeight="200.0" prefWidth="200.0">
+                    <left>
+                        <Button fx:id="btnCancel" mnemonicParsing="false" onAction="#onCancelButtonClick"
+                                text="Abbrechen" BorderPane.alignment="CENTER"/>
+                    </left>
+                    <right>
+                        <Button fx:id="btnRegister" mnemonicParsing="false" text="Registrieren"
+                                BorderPane.alignment="CENTER"/>
+                    </right>
+                </BorderPane>
+            </children>
+            <padding>
+                <Insets bottom="10.0" left="10.0" right="10.0" top="10.0"/>
+            </padding>
+        </VBox>
+    </center>
+</BorderPane>
